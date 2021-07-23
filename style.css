@@ -71,6 +71,14 @@ a {
     left: 0;
 }
 
+#header .brand h1 {
+    color: yellow;
+}
+
+#header .brand h1 span {
+    color:white;
+}
+
 #header .nav-list ul a {
     font-size: 2.5rem;
     font-weight: 500;

@@ -10,7 +10,7 @@ linhas3.addEventListener("click",()=>{
 
 document.addEventListener("scroll", ()=>{
     var scroll_position = window.scrollY;
-    if(scroll_position > 828) {
+    if(scroll_position > 500) {
         header.style.backgroundColor = "#1f1e1e";
     }else{
         header.style.backgroundColor = "transparent";
