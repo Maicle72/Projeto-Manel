@@ -204,6 +204,14 @@ a {
 
 /* End First Page*/
 
+/* Second Page */
+
+#quemSomos {
+    background-image: url(./img/secondPage_IMG.jpg);
+}
+
+/* End Second Page */
+
 
 /* KeyFrames */
 @keyframes animacao_firstPage {
