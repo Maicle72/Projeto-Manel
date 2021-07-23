@@ -235,6 +235,7 @@ a {
 
     #header .nav-list ul li {
         display: inline-block;
+        transition: width .3s;
     }
 
     #header .nav-list ul li a {
@@ -242,7 +243,21 @@ a {
     }
 
     #header .nav-list ul li a:hover {
-        color: yellow;
+        color: white;
+    }
+
+    #header .nav-list ul li a::after {
+        content: '';
+        margin-top: 6px;
+        display: block;
+        width: 0;
+        height: 2px;
+        background: yellow;
+        transition: .3s width;
+    }
+
+    #header .nav-list ul li a:hover::after {
+        width: 100%;
     }
 
 
@@ -250,6 +265,5 @@ a {
         display: none;
     }
 
-    
 }
 /* End Media Query */
