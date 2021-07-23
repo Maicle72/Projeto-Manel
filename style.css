@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* First Page*/
+#firstPage {
+    background-image: url(./img/firstPage_IMG.JPG);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#firstPage::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+}
+
+#firstPage h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: animacao_firstPage 1s ease forwards;
+}
+
+#firstPage .button_saiba_mais {
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+    color: yellow;
+    opacity: .8;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 35px ;
+    transition: .4s ease;
+    transition-property: background-color, color;
+    
+}
+
+#firstPage .button_saiba_mais:hover {
+    background-color: yellow;
+    opacity: .8;
+    padding: auto;
+    color: black;
+}
+
+/* End First Page*/
+
+
+/* KeyFrames */
+@keyframes animacao_firstPage {
+    100%{
+        color: orangered;
+    }
+}
+@keyframes animacao_firstPage_button {
+    100%{
+        color: yellow;
+    }
+}
+/* End KeyFrames */
