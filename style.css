@@ -35,9 +35,16 @@ a {
 }
 
 #header .container {
-    min-height: 7vh;
+    min-height: 6vh;
     background-color: rgba(31, 30, 30, 0.8);
     transition: .35s ease background-color;
+}
+
+#header .logo_img {
+    visibility: hidden;
+    position: absolute;
+    left: 50px;
+    top: 35px;
 }
 
 #header .logo_img:hover {
@@ -76,11 +83,23 @@ a {
 }
 
 #header .brand h1 {
+    text-align: right;
     color: yellow;
+}
+
+#header .brand h1 span.pi {
+    color: orange;
 }
 
 #header .brand h1 span {
     color:white;
+}
+
+#header .nav-list {
+    width: auto;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #header .nav-list ul a {
@@ -99,8 +118,8 @@ a {
 }
 
 #header .linhas3 {
-    height: 60px;
-	width: 60px;
+    height: 40px;
+	width: 40px;
 	display: inline-block;
 	border: 3px solid white;
 	border-radius: 50%;
@@ -114,7 +133,7 @@ a {
 
 #header .linhas3 .linhas {
     height: 2px;
-	width: 30px;
+	width: 18px;
 	position: relative;
 	background-color: white;
 	z-index: -1;
@@ -149,16 +168,36 @@ a {
 }
 
 
+#header .brand img {
+    visibility: hidden;
+    text-align: left;
+    height: auto;
+    width: 100%;
+}   
+
 /* End Header */
 
 
 /* First Page*/
 #firstPage {
-    background-image: url(./img/firstPage_IMG.JPG);
+    /* background-image: url(./img/firstPage_IMG.JPG); */
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
+}
+
+.bgimg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#bgImage {
+    height: 100%;
+    width: 100%;
 }
 
 #firstPage::after {
@@ -179,6 +218,7 @@ a {
     font-size: 4rem;
     position: relative;
     color: transparent;
+    padding-left: 100px;
     animation: animacao_firstPage 1s ease forwards;
 }
 
@@ -207,6 +247,19 @@ a {
     text-decoration: none;
 }
 
+
+#firstPage .firstPage_text h1 {
+    color: yellow;
+}
+
+#firstPage .firstPage_text h1 span.pi {
+    color: orange;
+}
+
+#firstPage .firstPage_text h1 span {
+    color:white;
+}
+
 /* End First Page*/
 
 /* Second Page */
@@ -215,10 +268,14 @@ a {
 /* End Second Page */
 
 
+#oqfazemos {
+    background-color: rgba(255, 255, 124, 0.5);
+}
+
 /* KeyFrames */
 @keyframes animacao_firstPage {
     100%{
-        color: orangered;
+        color: yellow;
     }
 }
 @keyframes animacao_firstPage_button {
@@ -234,6 +291,11 @@ a {
     #header .linhas3 {
         display: none;
     }
+
+    #header .nav-list {
+        width: auto;
+        height: 100%;
+    }
     
     #header .nav-list ul {
         position: initial;
@@ -241,6 +303,7 @@ a {
         height: auto;
         width: fit-content;
         background-color: transparent;
+        padding-top: 15px;
     }
 
     #header .nav-list ul li {
@@ -258,7 +321,7 @@ a {
 
     #header .nav-list ul li a::after {
         content: '';
-        margin-top: 6px;
+        margin-top: 4px;
         display: block;
         width: 0;
         height: 2px;
