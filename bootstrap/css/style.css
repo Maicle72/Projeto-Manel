@@ -1,0 +1,32 @@
+/* Disable space between span's */
+.no-space {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: -140px;
+}
+
+img {
+    display: flex;
+    max-width: 50%;
+    height: 50%;
+}
+
+.bg {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+}
+
